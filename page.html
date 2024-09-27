@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CybeX5 - Cybersecurity Consulting</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!-- For icons -->
+</head>
+<body>
+    <!-- CybeX5 Matrix Rain Background -->
+    <canvas id="matrix-canvas"></canvas>
+    
+    <!-- CybeX5 Loading Animation -->
+    <div id="cybex5-intro" class="intro">
+        <div class="loader">
+            <div class="text">CybeX5</div>
+            <div class="circles">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+            <div class="loading-bar"></div>
+        </div>
+    </div>
+
+    <!-- Main content -->
+    <div id="main-content" style="display:none;">
+        <header>
+            <nav class="navbar">
+                <div class="logo">CybeX5</div>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#message">Send a Message</a></li> <!-- Link to Message Section -->
+                </ul>
+            </nav>
+            <div class="header-content">
+                <h1>Protect Your Digital World</h1>
+                <p>Penetration testing and cybersecurity consulting by the experts at CybeX5.</p>
+                <a href="#services" class="btn">Explore Our Services</a>
+            </div>
+        </header>
+
+        <section id="services" class="services-section">
+            <h2>Our Services</h2>
+            <div class="services-container">
+                <div class="service-box">
+                    <i class="fas fa-shield-alt service-icon"></i>
+                    <h3>Penetration Testing</h3>
+                    <p>Simulating cyber-attacks to identify vulnerabilities and strengthen your defenses.</p>
+                </div>
+                <div class="service-box">
+                    <i class="fas fa-lock service-icon"></i>
+                    <h3>Security Audits</h3>
+                    <p>Comprehensive audits to ensure your systems and data are secure.</p>
+                </div>
+                <div class="service-box">
+                    <i class="fas fa-user-secret service-icon"></i>
+                    <h3>Vulnerability Assessments</h3>
+                    <p>Identifying weaknesses in your security infrastructure to safeguard your assets.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about-section no-matrix-background">
+            <h2>About CybeX5</h2>
+            <p>At CybeX5, we are a team of passionate cybersecurity experts dedicated to keeping your digital environment secure from constantly evolving threats.</p>
+        </section>
+
+        <footer id="contact" class="contact-section no-matrix-background">
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <p><i class="fas fa-envelope"></i> Email: contact@cybex5.com</p>
+                <p><i class="fas fa-phone"></i> Phone: 0997487080</p>
+            </div>
+        </footer>
+
+        <section id="message" class="message-section no-matrix-background">
+            <h2>Send Us a Message</h2>
+            <form class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+    </div>
+
+    <script src="typing.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
