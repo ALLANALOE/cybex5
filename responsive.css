@@ -1,0 +1,200 @@
+/* Global Styles for All Screens */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* General container width for responsive design */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+
+.navbar .logo {
+    font-size: 1.8rem;
+}
+
+.navbar ul {
+    display: flex; /* Use flex for consistent spacing */
+    flex-direction: row; /* Ensure horizontal alignment */
+    justify-content: space-around; /* Space out items evenly */
+    text-align: center;
+    margin-top: 10px;
+}
+
+.navbar ul li {
+    margin: 0 10px; /* Adjust margin for horizontal spacing */
+}
+
+/* Header Section */
+.header-content {
+    padding: 60px 20px;
+}
+
+.header-content h1 {
+    font-size: 2rem;
+}
+
+.header-content p {
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.btn {
+    font-size: 1rem;
+    padding: 8px 15px;
+}
+
+/* Services Section */
+.services-section {
+    padding: 40px 10px;
+}
+
+.services-container {
+    display: flex; /* Ensure flexbox is applied */
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-box {
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+/* About Section */
+.about-section h2 {
+    font-size: 2rem;
+}
+
+.about-section p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Contact Section */
+.contact-section h2 {
+    font-size: 1.8rem;
+}
+
+.contact-info {
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column;
+    text-align: center;
+}
+
+.contact-info p {
+    font-size: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+}
+
+/* Footer Section */
+.footer {
+    padding: 20px 10px;
+    font-size: 0.9rem;
+}
+
+/* Media Queries for Responsive Design */
+
+/* Tablets and smaller (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+    .navbar {
+        display: none; /* Hide the navbar */
+    }
+
+    .header-content h1 {
+        font-size: 2rem;
+    }
+
+    .header-content p {
+        font-size: 1rem;
+    }
+
+    .services-container {
+        flex-direction: column;
+    }
+
+    .service-box {
+        width: 100%;
+    }
+
+    .contact-info {
+        flex-direction: column;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+    }
+}
+
+/* Phones (max-width: 480px) */
+@media only screen and (max-width: 480px) {
+    .navbar {
+        display: none; /* Ensure navbar remains hidden */
+    }
+
+    .navbar .logo {
+        font-size: 1.5rem;
+    }
+
+    .header-content {
+        padding: 40px 10px;
+    }
+
+    .header-content h1 {
+        font-size: 1.6rem;
+    }
+
+    .header-content p {
+        font-size: 0.9rem;
+    }
+
+    .services-container {
+        flex-direction: column;
+    }
+
+    .service-box {
+        width: 95%;
+    }
+
+    .contact-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-info p {
+        font-size: 0.9rem;
+    }
+
+    .contact-form button {
+        width: 100%;
+        padding: 8px;
+    }
+}
+
+/* Hide Background Overflow */
+body {
+    overflow-x: hidden;
+}
